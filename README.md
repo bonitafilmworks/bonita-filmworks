@@ -3,10 +3,9 @@
 A dependency-free portfolio site made for **GitHub Pages** (free hosting).
 An index page plus four project pages, a plain white background, an oversized
 black logo at 40% opacity with an 8 px blur anchored right, a black cropped logo
-as the home link, a Jasper Red ant cursor, a cursor trail in Vandyke Brown,
-Vandyke Red and Carmine Red, a solid randomised colour box in the same three
-colours that covers hovered navigation labels, centred navigation, and display
-type at 20 pt.
+as the home link, a Jasper Red ant cursor, a solid randomised colour box in
+Vandyke Brown, Vandyke Red and Carmine Red that covers hovered navigation
+labels, centred navigation, and display type at 20 pt.
 
 The site is published from this repository and served at
 **https://bonitafilmworks.co**.
@@ -31,8 +30,6 @@ Colours are taken from [Wada Sanzo's Dictionary of Color Combinations](https://s
 - Background: **white** `#ffffff`
 - Logos and text: **black** `#000000`
 - Cursor: **Jasper Red** `#fa2b00`
-- Cursor trail: **Vandyke Brown** `#362304`, **Vandyke Red** `#740909`,
-  **Carmine Red** `#a10b2b`
 - Hover box: **Vandyke Brown** `#362304`, **Vandyke Red** `#740909`,
   **Carmine Red** `#a10b2b`
 
@@ -57,8 +54,8 @@ its readme (`assets/fonts/LICENCE.txt`).
 - `styles.css` — all styling (shared by every page)
 - `nav-highlight.js` — covers the hovered label with a solid box in a random
   colour from the palette
-- `trail.js` — spawns the randomised ant trail on mouse move (skipped on touch
-  devices and when reduced motion is requested)
+- `logo-position.js` — centres the top logo between the frame and the first
+  navigation label on the index page
 - `video-fallback.js` — replaces the embed with a thumbnail link when the site
   is opened from `file://`, where YouTube cannot receive a referrer
 - `assets/fonts/moms-typewriter.ttf` — the display typeface (see Typography)
@@ -70,8 +67,6 @@ its readme (`assets/fonts/LICENCE.txt`).
   home link (displayed at 117–151 px wide)
 - `assets/cursor-ant.png` — Jasper Red 64 px version of `BFWC ANT.png`, used as the cursor
 - `assets/favicon.png` — black ant on a white tile
-- `assets/trail-vandyke-brown.png`, `assets/trail-vandyke-red.png`,
-  `assets/trail-carmine.png` — 128 px trail ants
 - `BFWC ANT.png`, `LOGO ANT BIG.png` — your original artwork, untouched
 - `CNAME` — tells GitHub Pages to serve the site at `bonitafilmworks.co`
 - `.nojekyll` — tells GitHub Pages to serve the files exactly as they are
@@ -106,7 +101,7 @@ show **“Error 153: Video player configuration error”**. The embeds also use
    - `bonnet-calypso.html`
    - `styles.css`
    - `nav-highlight.js`
-   - `trail.js`
+   - `logo-position.js`
    - `video-fallback.js`
    - `assets/` (the whole folder)
    - `.nojekyll`
@@ -127,9 +122,7 @@ Tip: if you name the repository `YOUR-USERNAME.github.io`, the site will live at
 - Change text, titles and links directly in the `.html` files.
 - Change colours, type sizes and the logo size in `styles.css`
   (look for `--bg`, `--fg`, `--jasper`, `.backdrop__logo`, `.brand__logo`,
-  `font-size: 20pt`, and `.cursor-trail`).
-- The trail picks randomly from the three `assets/trail-*.png` files listed in
-  `trail.js`; change the colours there and regenerate those PNGs to recolour it.
+  `font-size: 20pt`, and `letter-spacing`).
 - The nav highlight uses the three hex values listed in `nav-highlight.js`.
   Change them there to recolour the hover box.
 - To swap the cursor, replace `assets/cursor-ant.png` with another square PNG

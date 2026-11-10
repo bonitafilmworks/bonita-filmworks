@@ -367,39 +367,3 @@ button:focus-visible {
   }
 }
 
-/* Cursor trail ----------------------------------------------------- */
-
-.cursor-trail {
-  position: fixed;
-  z-index: 9999;
-  width: 32px;
-  height: 32px;
-  pointer-events: none;
-  user-select: none;
-  -webkit-user-drag: none;
-  transform: translate(-50%, -50%) rotate(var(--rot, 0deg));
-  transform-origin: 50% 50%;
-  will-change: transform, opacity;
-  animation: trail-fade 640ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
-}
-
-@keyframes trail-fade {
-  0% {
-    opacity: 0.95;
-    transform: translate(-50%, -50%) rotate(var(--rot, 0deg)) scale(1);
-  }
-  100% {
-    opacity: 0;
-    transform: translate(
-        calc(-50% + var(--dx, 0px)),
-        calc(-50% + var(--dy, -10px))
-      )
-      rotate(calc(var(--rot, 0deg) + 28deg)) scale(0.35);
-  }
-}
-
-@media (hover: none), (pointer: coarse) {
-  .cursor-trail {
-    display: none;
-  }
-}
