@@ -40,17 +40,16 @@ set at 20 pt with 5 pt letter spacing.
 
 ## Typography
 
-The site uses **“Why do we blink so frequently?”** by junkohanhero
-(`assets/fonts/why-do-we-blink.ttf`, loaded via `@font-face` as
+The site uses **“Mom's Typewriter”** by Christoph Mueller
+(`assets/fonts/moms-typewriter.ttf`, loaded via `@font-face` as
 `Bonita Display`). The font has no Chinese glyphs, so `纽约` falls back to
 PingFang / Hiragino Sans / Noto Sans CJK, and the `←` in the back link falls back
 to the system font. `纽约` is wrapped in `.no-break` so it never splits across
 lines on narrow screens.
 
-Licensing: the font is **free for personal use only**; commercial use (this is a
-company site) requires a $20 licence from junkohanhero
-(junkohanhero@gmail.com). Swap the file if a licensed alternative is preferred —
-only the `@font-face` `src` and the `font-family` list need to change.
+Licensing: the font is **free to use** (“totally free”, use it as long as you
+wish); it may not be sold or altered, and must be redistributed together with
+its readme (`assets/fonts/LICENCE.txt`).
 
 ## Files
 
@@ -61,7 +60,7 @@ only the `@font-face` `src` and the `font-family` list need to change.
   devices and when reduced motion is requested)
 - `video-fallback.js` — replaces the embed with a thumbnail link when the site
   is opened from `file://`, where YouTube cannot receive a referrer
-- `assets/fonts/why-do-we-blink.ttf` — the display typeface (see Typography)
+- `assets/fonts/moms-typewriter.ttf` — the display typeface (see Typography)
 - `assets/fonts/LICENCE.txt` — the type designer's licence note
 - `assets/logo-ant.png` — black web version of `LOGO ANT BIG.png`, used as the
   oversized background logo at 40% opacity with an 8 px blur
