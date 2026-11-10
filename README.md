@@ -35,8 +35,9 @@ Colours are taken from [Wada Sanzo's Dictionary of Color Combinations](https://s
 
 The paper-grain background was removed; the page is a flat white. All type is
 set at 20 pt with 4 px of inward kerning (`letter-spacing: -4px`) and
-`word-spacing: 4px` so word gaps stay open. The index navigation and the footer
-**← Index** link are centred.
+`word-spacing: 4px` so word gaps stay open. The whiteTAR wordmark uses a lighter
+−2 px kern (`.kern-2`). The index navigation and the footer **← Index** link are
+centred.
 
 ## Typography
 

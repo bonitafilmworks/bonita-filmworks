@@ -45,6 +45,13 @@ body {
   white-space: nowrap;
 }
 
+/* Lighter tracking for the whiteTAR wordmark ----------------------- */
+
+.kern-2 {
+  letter-spacing: -2px;
+  word-spacing: 2px;
+}
+
 a,
 button {
   color: inherit;
