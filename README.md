@@ -2,10 +2,10 @@
 
 A dependency-free portfolio site made for **GitHub Pages** (free hosting).
 An index page plus four project pages, a plain white background, an oversized
-black logo at 40% opacity anchored right, a black cropped logo as the home link,
-a Jasper Red ant cursor, a cursor trail in three Sanzo Wada colours, a solid
-randomised colour box that covers hovered navigation labels, and Courier type at
-20 pt with 5 pt letter spacing.
+black logo at 40% opacity with a 20 px blur anchored right, a black cropped logo
+as the home link, a Jasper Red ant cursor, a cursor trail in three Sanzo Wada
+colours, a solid randomised colour box that covers hovered navigation labels, and
+display type at 20 pt with 5 pt letter spacing.
 
 The site is published from this repository and served at
 **https://bonitafilmworks.co**.
@@ -64,7 +64,8 @@ only the `@font-face` `src` and the `font-family` list need to change.
 - `assets/fonts/why-do-we-blink-jungle.ttf` — the display typeface (see Typography)
 - `assets/fonts/LICENCE.txt` — the type designer's licence note
 - `assets/logo-ant.png` — black web version of `LOGO ANT BIG.png`, used as the
-  oversized background logo at 40% opacity
+  oversized background logo at 40% opacity with a 20 px blur
+  (`--backdrop-blur`)
 - `assets/logo-ant-small.png` — cropped 480 px black logo used as the top-left
   home link (displayed at 117–151 px wide)
 - `assets/cursor-ant.png` — Jasper Red 64 px version of `BFWC ANT.png`, used as the cursor

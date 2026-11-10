@@ -21,6 +21,7 @@
   --jasper: #fa2b00;      /* Jasper Red */
   --muted: rgba(0, 0, 0, 0.6);
   --line: rgba(0, 0, 0, 0.2);
+  --backdrop-blur: 20px;  /* softening for the oversized logo */
   --pad: clamp(20px, 4vw, 56px);
   /* BFWC ANT.png, recolored Jasper Red and scaled for use as a cursor */
   --cursor: url("assets/cursor-ant.png") 32 32, auto;
@@ -92,6 +93,7 @@ button:focus-visible {
   max-width: none;
   height: auto;
   opacity: 0.4;
+  filter: blur(var(--backdrop-blur));
   transform: translate(-50%, -50%);
   user-select: none;
   -webkit-user-drag: none;
