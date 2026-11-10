@@ -10,9 +10,9 @@
   if (reduce.matches || coarse.matches) return;
 
   const assets = [
-    "assets/trail-rosolanc.png", // Rosolanc Purple  #b319ab
-    "assets/trail-lyons.png",    // Deep Lyons Blue  #0024cc
-    "assets/trail-jasper.png",   // Jasper Red       #fa2b00
+    "assets/trail-vandyke-brown.png", // Vandyke Brown #362304
+    "assets/trail-vandyke-red.png",   // Vandyke Red   #740909
+    "assets/trail-carmine.png",       // Carmine Red   #a10b2b
   ];
 
   // Warm the cache so the first ants appear instantly.

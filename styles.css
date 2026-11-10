@@ -15,10 +15,7 @@
 :root {
   --bg: #fff;             /* white */
   --fg: #000;
-  --sulphine: #baa600;    /* Sulphine Yellow */
-  --rosolanc: #b319ab;    /* Rosolanc Purple */
-  --lyons: #0024cc;       /* Deep Lyons Blue */
-  --jasper: #fa2b00;      /* Jasper Red */
+  --jasper: #fa2b00;      /* Jasper Red, cursor and fallback accents */
   --muted: rgba(0, 0, 0, 0.6);
   --line: rgba(0, 0, 0, 0.2);
   --backdrop-blur: 8px;   /* softening for the oversized logo */
@@ -47,6 +44,7 @@ body {
   font-family: "Bonita Display", "PingFang SC", "Hiragino Sans GB",
     "Noto Sans CJK SC", monospace;
   font-size: 20pt;
+  letter-spacing: -5px;
   line-height: 1.4;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -143,6 +141,7 @@ button:focus-visible {
   margin: 0;
   padding: 0;
   list-style: none;
+  text-align: center;
 }
 
 .work a {
@@ -262,10 +261,11 @@ button:focus-visible {
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
-  justify-content: flex-start;
+  justify-content: center;
   gap: 10px 32px;
   width: min(100%, 64vw, 980px);
   margin-top: clamp(18px, 2.8vh, 30px);
+  margin-inline: auto;
   padding-top: clamp(12px, 1.8vh, 18px);
   border-top: 1px solid var(--line);
 }

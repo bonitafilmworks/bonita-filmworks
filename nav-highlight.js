@@ -1,15 +1,14 @@
 /* ------------------------------------------------------------------
    Navigation hover highlight
    Draws a compact solid box over the hovered label, in a random
-   colour from the Sanzo Wada palette.
+   colour from a three-colour red/brown set.
    ------------------------------------------------------------------ */
 
 (() => {
   const COLORS = [
-    { hex: "#baa600" }, // Sulphine Yellow
-    { hex: "#b319ab" }, // Rosolanc Purple
-    { hex: "#0024cc" }, // Deep Lyons Blue
-    { hex: "#fa2b00" }, // Jasper Red
+    { hex: "#362304" }, // Vandyke Brown
+    { hex: "#740909" }, // Vandyke Red
+    { hex: "#a10b2b" }, // Carmine Red
   ];
 
   const coarse = window.matchMedia("(hover: none), (pointer: coarse)");

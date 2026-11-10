@@ -3,9 +3,10 @@
 A dependency-free portfolio site made for **GitHub Pages** (free hosting).
 An index page plus four project pages, a plain white background, an oversized
 black logo at 40% opacity with an 8 px blur anchored right, a black cropped logo
-as the home link, a Jasper Red ant cursor, a cursor trail in three Sanzo Wada
-colours, a solid randomised colour box that covers hovered navigation labels, and
-display type at 20 pt.
+as the home link, a Jasper Red ant cursor, a cursor trail in Vandyke Brown,
+Vandyke Red and Carmine Red, a solid randomised colour box in the same three
+colours that covers hovered navigation labels, centred navigation, and display
+type at 20 pt.
 
 The site is published from this repository and served at
 **https://bonitafilmworks.co**.
@@ -17,7 +18,7 @@ The site is published from this repository and served at
 | Home / Index | `index.html` | List of the four pages (no top-right navigation) |
 | Us | `us.html` | Coming soon |
 | whiteTAR | `whitetar.html` | Embedded YouTube player |
-| Two Bridges, 纽约 | `two-bridges.html` | Embedded YouTube player |
+| Two Bridges, New York | `two-bridges.html` | Embedded YouTube player |
 | Bonnet & Calypso | `bonnet-calypso.html` | Coming soon |
 
 Each project page has a **← Index** link in its footer, and the logo at the top
@@ -30,22 +31,22 @@ Colours are taken from [Wada Sanzo's Dictionary of Color Combinations](https://s
 - Background: **white** `#ffffff`
 - Logos and text: **black** `#000000`
 - Cursor: **Jasper Red** `#fa2b00`
-- Cursor trail: **Rosolanc Purple** `#b319ab`, **Deep Lyons Blue** `#0024cc`,
-  **Jasper Red** `#fa2b00`
-- Hover box: **Sulphine Yellow** `#baa600`, **Rosolanc Purple** `#b319ab`,
-  **Deep Lyons Blue** `#0024cc`, **Jasper Red** `#fa2b00`
+- Cursor trail: **Vandyke Brown** `#362304`, **Vandyke Red** `#740909`,
+  **Carmine Red** `#a10b2b`
+- Hover box: **Vandyke Brown** `#362304`, **Vandyke Red** `#740909`,
+  **Carmine Red** `#a10b2b`
 
 The paper-grain background was removed; the page is a flat white. All type is
-set at 20 pt with the font's natural spacing (no added tracking).
+set at 20 pt with 5 px of inward kerning (`letter-spacing: -5px`). The index
+navigation and the footer **← Index** link are centred.
 
 ## Typography
 
 The site uses **“Mom's Typewriter”** by Christoph Mueller
 (`assets/fonts/moms-typewriter.ttf`, loaded via `@font-face` as
-`Bonita Display`). The font has no Chinese glyphs, so `纽约` falls back to
-PingFang / Hiragino Sans / Noto Sans CJK, and the `←` in the back link falls back
-to the system font. `纽约` is wrapped in `.no-break` so it never splits across
-lines on narrow screens.
+`Bonita Display`). The font has no `←` glyph, so the arrow in the back link
+falls back to the system font. `New York` is wrapped in `.no-break` so it never
+splits across lines on narrow screens.
 
 Licensing: the font is **free to use** (“totally free”, use it as long as you
 wish); it may not be sold or altered, and must be redistributed together with
@@ -69,8 +70,8 @@ its readme (`assets/fonts/LICENCE.txt`).
   home link (displayed at 117–151 px wide)
 - `assets/cursor-ant.png` — Jasper Red 64 px version of `BFWC ANT.png`, used as the cursor
 - `assets/favicon.png` — black ant on a white tile
-- `assets/trail-rosolanc.png`, `assets/trail-lyons.png`,
-  `assets/trail-jasper.png` — 128 px trail ants
+- `assets/trail-vandyke-brown.png`, `assets/trail-vandyke-red.png`,
+  `assets/trail-carmine.png` — 128 px trail ants
 - `BFWC ANT.png`, `LOGO ANT BIG.png` — your original artwork, untouched
 - `CNAME` — tells GitHub Pages to serve the site at `bonitafilmworks.co`
 - `.nojekyll` — tells GitHub Pages to serve the files exactly as they are
@@ -129,7 +130,7 @@ Tip: if you name the repository `YOUR-USERNAME.github.io`, the site will live at
   `font-size: 20pt`, and `.cursor-trail`).
 - The trail picks randomly from the three `assets/trail-*.png` files listed in
   `trail.js`; change the colours there and regenerate those PNGs to recolour it.
-- The nav highlight uses the four hex values listed in `nav-highlight.js`.
+- The nav highlight uses the three hex values listed in `nav-highlight.js`.
   Change them there to recolour the hover box.
 - To swap the cursor, replace `assets/cursor-ant.png` with another square PNG
   (64 × 64 px works well) and update the hotspot in the `--cursor` rule if needed.
