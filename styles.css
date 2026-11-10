@@ -1,12 +1,12 @@
 /* ------------------------------------------------------------------
    bonita filmworks company — portfolio
    White background, black logos and text, "Why do we blink so
-   frequently? Jungle" display type
+   frequently?" display type
    ------------------------------------------------------------------ */
 
 @font-face {
   font-family: "Bonita Display";
-  src: url("assets/fonts/why-do-we-blink-jungle.ttf") format("truetype");
+  src: url("assets/fonts/why-do-we-blink.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
