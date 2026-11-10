@@ -22,7 +22,7 @@ The site is published from this repository and served at
 | Bonnet & Calypso | `bonnet-calypso.html` | Coming soon |
 
 Each project page has a **← Index** link in its footer, and the logo at the top
-left links back to the index.
+centre links back to the index.
 
 ## Palette
 
@@ -66,7 +66,7 @@ its readme (`assets/fonts/LICENCE.txt`).
 - `assets/logo-ant.png` — black web version of `LOGO ANT BIG.png`, used as the
   oversized background logo at 40% opacity with an 8 px blur
   (`--backdrop-blur`)
-- `assets/logo-ant-small.png` — cropped 480 px black logo used as the top-left
+- `assets/logo-ant-small.png` — cropped 480 px black logo used as the top-centre
   home link (displayed at 117–151 px wide)
 - `assets/cursor-ant.png` — Jasper Red 64 px version of `BFWC ANT.png`, used as the cursor
 - `assets/favicon.png` — black ant on a white tile

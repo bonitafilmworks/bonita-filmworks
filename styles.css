@@ -109,6 +109,7 @@ button:focus-visible {
 .site-header {
   display: flex;
   align-items: flex-start;
+  justify-content: center;
   padding: clamp(20px, 3vw, 36px) var(--pad);
 }
 
