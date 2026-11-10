@@ -1,7 +1,7 @@
 /* ------------------------------------------------------------------
    Navigation hover highlight
    Draws a compact solid box over the hovered label, in a random
-   colour from a three-colour red/brown set.
+   colour from a four-colour red/brown/pink set.
    ------------------------------------------------------------------ */
 
 (() => {
@@ -9,6 +9,7 @@
     { hex: "#362304" }, // Vandyke Brown
     { hex: "#740909" }, // Vandyke Red
     { hex: "#a10b2b" }, // Carmine Red
+    { hex: "#ff5ec4" }, // Eosine Pink
   ];
 
   const coarse = window.matchMedia("(hover: none), (pointer: coarse)");
