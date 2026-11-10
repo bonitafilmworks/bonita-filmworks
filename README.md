@@ -7,6 +7,9 @@ a Jasper Red ant cursor, a cursor trail in three Sanzo Wada colours, a solid
 randomised colour box that covers hovered navigation labels, and Courier type at
 20 pt with 5 pt letter spacing.
 
+The site is published from this repository and served at
+**https://bonitafilmworks.co**.
+
 ## Pages
 
 | Page | File | Content |
@@ -53,6 +56,7 @@ set in Courier at 20 pt with 5 pt letter spacing.
 - `assets/trail-rosolanc.png`, `assets/trail-lyons.png`,
   `assets/trail-jasper.png` — 128 px trail ants
 - `BFWC ANT.png`, `LOGO ANT BIG.png` — your original artwork, untouched
+- `CNAME` — tells GitHub Pages to serve the site at `bonitafilmworks.co`
 - `.nojekyll` — tells GitHub Pages to serve the files exactly as they are
 
 The original artwork is black on a transparent background. It is kept in the
