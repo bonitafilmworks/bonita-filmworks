@@ -1,0 +1,403 @@
+/* ------------------------------------------------------------------
+   bonita filmworks company — portfolio
+   White background, black logos and text, Courier type
+   ------------------------------------------------------------------ */
+
+:root {
+  --bg: #fff;             /* white */
+  --fg: #000;
+  --sulphine: #baa600;    /* Sulphine Yellow */
+  --rosolanc: #b319ab;    /* Rosolanc Purple */
+  --lyons: #0024cc;       /* Deep Lyons Blue */
+  --jasper: #fa2b00;      /* Jasper Red */
+  --muted: rgba(0, 0, 0, 0.6);
+  --line: rgba(0, 0, 0, 0.2);
+  --pad: clamp(20px, 4vw, 56px);
+  /* BFWC ANT.png, recolored Jasper Red and scaled for use as a cursor */
+  --cursor: url("assets/cursor-ant.png") 32 32, auto;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--bg);
+  cursor: var(--cursor);
+}
+
+body {
+  margin: 0;
+  min-height: 100svh;
+  background: var(--bg);
+  color: var(--fg);
+  cursor: var(--cursor);
+  font-family: Courier, "Courier New", "PingFang SC", "Hiragino Sans GB",
+    "Noto Sans CJK SC", monospace;
+  font-size: 20pt;
+  letter-spacing: 5pt;
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+a,
+button {
+  color: inherit;
+  cursor: var(--cursor);
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--fg);
+  outline-offset: 5px;
+}
+
+::selection {
+  background: var(--jasper);
+  color: var(--fg);
+}
+
+/* Oversized black logo at 40%, pushed to the right ----------------- */
+
+.backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.backdrop__logo {
+  position: absolute;
+  top: 50%;
+  left: 72%;
+  display: block;
+  width: 168vmin;
+  max-width: none;
+  height: auto;
+  opacity: 0.4;
+  transform: translate(-50%, -50%);
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+/* Page shell ------------------------------------------------------ */
+
+.site {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 100svh;
+}
+
+.site-header {
+  display: flex;
+  align-items: flex-start;
+  padding: clamp(20px, 3vw, 36px) var(--pad);
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.brand__logo {
+  display: block;
+  width: clamp(117px, 10.48vw, 151px);
+  max-width: calc(100vw - 2 * var(--pad));
+  height: auto;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+/* Index ----------------------------------------------------------- */
+
+.main {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(24px, 5vh, 64px) var(--pad) clamp(32px, 6vh, 72px);
+}
+
+.works {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.work a {
+  display: block;
+  padding: clamp(16px, 2.6vh, 30px) 0;
+  text-decoration: none;
+}
+
+.work:first-child a {
+  border-bottom: 1px solid var(--line);
+}
+
+.work__name {
+  font-size: 20pt;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+/* Project pages --------------------------------------------------- */
+
+.project {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(16px, 3vh, 36px) var(--pad) clamp(26px, 4.5vh, 52px);
+}
+
+.project__title {
+  max-width: none;
+  margin: 0 0 clamp(20px, 3.4vh, 34px);
+  font-size: 20pt;
+  font-weight: 500;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+  text-wrap: balance;
+}
+
+.project--soon .project__title {
+  max-width: none;
+  font-size: 20pt;
+}
+
+.project__media {
+  position: relative;
+  width: min(100%, 64vw, 980px);
+  aspect-ratio: 16 / 9;
+  background: #000;
+  border: 1px solid var(--line);
+}
+
+.project__media iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Shown only for file:// previews, where YouTube cannot embed. */
+
+.video-fallback {
+  position: absolute;
+  inset: 0;
+  display: block;
+  overflow: hidden;
+  background: #000;
+}
+
+.video-fallback img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.82;
+  transition: opacity 0.25s ease,
+    transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.video-fallback:hover img {
+  opacity: 1;
+  transform: scale(1.02);
+}
+
+.video-fallback__play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: grid;
+  width: clamp(48px, 7vw, 76px);
+  height: clamp(48px, 7vw, 76px);
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.62);
+  font-size: clamp(48px, 7vw, 76px);
+  transform: translate(-50%, -50%);
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.video-fallback:hover .video-fallback__play {
+  border-color: var(--jasper);
+  background: rgba(0, 0, 0, 0.78);
+}
+
+.video-fallback__play::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  margin-left: 0.08em;
+  border-top: 0.24em solid transparent;
+  border-bottom: 0.24em solid transparent;
+  border-left: 0.38em solid var(--jasper);
+}
+
+.project__foot {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: flex-start;
+  gap: 10px 32px;
+  width: min(100%, 64vw, 980px);
+  margin-top: clamp(18px, 2.8vh, 30px);
+  padding-top: clamp(12px, 1.8vh, 18px);
+  border-top: 1px solid var(--line);
+}
+
+.watch {
+  display: inline-flex;
+  align-items: center;
+  padding-bottom: 5px;
+  border-bottom: 1px solid var(--fg);
+  font-size: 20pt;
+  letter-spacing: 5pt;
+  text-decoration: none;
+}
+
+.back {
+  padding-bottom: 4px;
+  border-bottom: 1px solid transparent;
+  color: var(--muted);
+  font-size: 20pt;
+  letter-spacing: 5pt;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.back:hover {
+  border-color: currentColor;
+  color: var(--fg);
+}
+
+/* Navigation hover highlight -------------------------------------- */
+
+.brand,
+.work a,
+.watch,
+.back {
+  position: relative;
+  isolation: isolate;
+}
+
+/* Solid box, sized to the label and painted over the glyphs. */
+
+.nav-hl {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  background: var(--hl, transparent);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.14s ease;
+}
+
+.is-hover .nav-hl {
+  opacity: 1;
+}
+
+.status {
+  margin: 0;
+  color: var(--muted);
+  font-size: 20pt;
+  letter-spacing: 5pt;
+  text-transform: uppercase;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (max-width: 918px) {
+  .backdrop__logo {
+    left: 80%;
+    width: 215vmin;
+  }
+
+  .project__media,
+  .project__foot {
+    width: 100%;
+  }
+}
+
+@media (max-width: 720px) {
+  .work__name {
+    font-size: 20pt;
+  }
+
+  .project__title {
+    max-width: none;
+    font-size: 20pt;
+  }
+
+  .project__foot {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
+
+/* Cursor trail ----------------------------------------------------- */
+
+.cursor-trail {
+  position: fixed;
+  z-index: 9999;
+  width: 32px;
+  height: 32px;
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  transform: translate(-50%, -50%) rotate(var(--rot, 0deg));
+  transform-origin: 50% 50%;
+  will-change: transform, opacity;
+  animation: trail-fade 640ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@keyframes trail-fade {
+  0% {
+    opacity: 0.95;
+    transform: translate(-50%, -50%) rotate(var(--rot, 0deg)) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(
+        calc(-50% + var(--dx, 0px)),
+        calc(-50% + var(--dy, -10px))
+      )
+      rotate(calc(var(--rot, 0deg) + 28deg)) scale(0.35);
+  }
+}
+
+@media (hover: none), (pointer: coarse) {
+  .cursor-trail {
+    display: none;
+  }
+}
