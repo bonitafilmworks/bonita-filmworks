@@ -47,7 +47,6 @@ body {
   font-family: "Bonita Display", "PingFang SC", "Hiragino Sans GB",
     "Noto Sans CJK SC", monospace;
   font-size: 20pt;
-  letter-spacing: 5pt;
   line-height: 1.4;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -276,7 +275,6 @@ button:focus-visible {
   border-bottom: 1px solid transparent;
   color: var(--muted);
   font-size: 20pt;
-  letter-spacing: 5pt;
   text-transform: uppercase;
   text-decoration: none;
   transition: color 0.2s ease, border-color 0.2s ease;
@@ -316,7 +314,6 @@ button:focus-visible {
   margin: 0;
   color: var(--muted);
   font-size: 20pt;
-  letter-spacing: 5pt;
   text-transform: uppercase;
 }
 

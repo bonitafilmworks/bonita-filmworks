@@ -5,7 +5,7 @@ An index page plus four project pages, a plain white background, an oversized
 black logo at 40% opacity with an 8 px blur anchored right, a black cropped logo
 as the home link, a Jasper Red ant cursor, a cursor trail in three Sanzo Wada
 colours, a solid randomised colour box that covers hovered navigation labels, and
-display type at 20 pt with 5 pt letter spacing.
+display type at 20 pt.
 
 The site is published from this repository and served at
 **https://bonitafilmworks.co**.
@@ -36,7 +36,7 @@ Colours are taken from [Wada Sanzo's Dictionary of Color Combinations](https://s
   **Deep Lyons Blue** `#0024cc`, **Jasper Red** `#fa2b00`
 
 The paper-grain background was removed; the page is a flat white. All type is
-set at 20 pt with 5 pt letter spacing.
+set at 20 pt with the font's natural spacing (no added tracking).
 
 ## Typography
 
@@ -126,7 +126,7 @@ Tip: if you name the repository `YOUR-USERNAME.github.io`, the site will live at
 - Change text, titles and links directly in the `.html` files.
 - Change colours, type sizes and the logo size in `styles.css`
   (look for `--bg`, `--fg`, `--jasper`, `.backdrop__logo`, `.brand__logo`,
-  `font-size: 20pt`, `letter-spacing: 5pt`, and `.cursor-trail`).
+  `font-size: 20pt`, and `.cursor-trail`).
 - The trail picks randomly from the three `assets/trail-*.png` files listed in
   `trail.js`; change the colours there and regenerate those PNGs to recolour it.
 - The nav highlight uses the four hex values listed in `nav-highlight.js`.
