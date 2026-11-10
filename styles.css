@@ -21,7 +21,7 @@
   --jasper: #fa2b00;      /* Jasper Red */
   --muted: rgba(0, 0, 0, 0.6);
   --line: rgba(0, 0, 0, 0.2);
-  --backdrop-blur: 20px;  /* softening for the oversized logo */
+  --backdrop-blur: 8px;   /* softening for the oversized logo */
   --pad: clamp(20px, 4vw, 56px);
   /* BFWC ANT.png, recolored Jasper Red and scaled for use as a cursor */
   --cursor: url("assets/cursor-ant.png") 32 32, auto;
@@ -271,16 +271,6 @@ button:focus-visible {
   border-top: 1px solid var(--line);
 }
 
-.watch {
-  display: inline-flex;
-  align-items: center;
-  padding-bottom: 5px;
-  border-bottom: 1px solid var(--fg);
-  font-size: 20pt;
-  letter-spacing: 5pt;
-  text-decoration: none;
-}
-
 .back {
   padding-bottom: 4px;
   border-bottom: 1px solid transparent;
@@ -301,7 +291,6 @@ button:focus-visible {
 
 .brand,
 .work a,
-.watch,
 .back {
   position: relative;
   isolation: isolate;
