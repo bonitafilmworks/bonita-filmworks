@@ -194,6 +194,16 @@ button:focus-visible {
   border: 1px solid var(--line);
 }
 
+/* Video pages: centre title and player ----------------------------- */
+
+.project--video .project__title {
+  text-align: center;
+}
+
+.project--video .project__media {
+  margin-inline: auto;
+}
+
 .project__media iframe {
   display: block;
   width: 100%;
