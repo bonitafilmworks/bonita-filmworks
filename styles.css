@@ -1,16 +1,7 @@
 /* ------------------------------------------------------------------
    bonita filmworks company — portfolio
-   White background, black logos and text, "Mom's Typewriter"
-   display type
+   White background, black logos and text, Helvetica display type
    ------------------------------------------------------------------ */
-
-@font-face {
-  font-family: "Bonita Display";
-  src: url("assets/fonts/moms-typewriter.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
 
 :root {
   --bg: #fff;             /* white */
@@ -41,10 +32,10 @@ body {
   background: var(--bg);
   color: var(--fg);
   cursor: var(--cursor);
-  font-family: "Bonita Display", "PingFang SC", "Hiragino Sans GB",
-    "Noto Sans CJK SC", monospace;
+  font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
   font-size: 20pt;
   letter-spacing: -5px;
+  word-spacing: 5px;
   line-height: 1.4;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;

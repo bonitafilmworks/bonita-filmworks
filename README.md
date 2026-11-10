@@ -34,20 +34,16 @@ Colours are taken from [Wada Sanzo's Dictionary of Color Combinations](https://s
   **Carmine Red** `#a10b2b`, **Eosine Pink** `#ff5ec4`
 
 The paper-grain background was removed; the page is a flat white. All type is
-set at 20 pt with 5 px of inward kerning (`letter-spacing: -5px`). The index
-navigation and the footer **← Index** link are centred.
+set at 20 pt with 5 px of inward kerning (`letter-spacing: -5px`) and
+`word-spacing: 5px` so word gaps stay open. The index navigation and the footer
+**← Index** link are centred.
 
 ## Typography
 
-The site uses **“Mom's Typewriter”** by Christoph Mueller
-(`assets/fonts/moms-typewriter.ttf`, loaded via `@font-face` as
-`Bonita Display`). The font has no `←` glyph, so the arrow in the back link
-falls back to the system font. `New York` is wrapped in `.no-break` so it never
-splits across lines on narrow screens.
-
-Licensing: the font is **free to use** (“totally free”, use it as long as you
-wish); it may not be sold or altered, and must be redistributed together with
-its readme (`assets/fonts/LICENCE.txt`).
+The site uses the system **Helvetica** family
+(`Helvetica, "Helvetica Neue", Arial, sans-serif`); no webfont is downloaded.
+`New York` is wrapped in `.no-break` so it never splits across lines on narrow
+screens.
 
 ## Files
 
@@ -58,8 +54,6 @@ its readme (`assets/fonts/LICENCE.txt`).
   navigation label on the index page
 - `video-fallback.js` — replaces the embed with a thumbnail link when the site
   is opened from `file://`, where YouTube cannot receive a referrer
-- `assets/fonts/moms-typewriter.ttf` — the display typeface (see Typography)
-- `assets/fonts/LICENCE.txt` — the type designer's licence note
 - `assets/logo-ant.png` — black web version of `LOGO ANT BIG.png`, used as the
   oversized background logo at 40% opacity with an 8 px blur
   (`--backdrop-blur`)
