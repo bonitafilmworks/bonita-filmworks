@@ -34,8 +34,8 @@ Colours are taken from [Wada Sanzo's Dictionary of Color Combinations](https://s
   **Carmine Red** `#a10b2b`, **Eosine Pink** `#ff5ec4`
 
 The paper-grain background was removed; the page is a flat white. All type is
-set at 20 pt with 5 px of inward kerning (`letter-spacing: -5px`) and
-`word-spacing: 5px` so word gaps stay open. The index navigation and the footer
+set at 20 pt with 3 px of inward kerning (`letter-spacing: -3px`) and
+`word-spacing: 3px` so word gaps stay open. The index navigation and the footer
 **← Index** link are centred.
 
 ## Typography

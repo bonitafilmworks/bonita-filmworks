@@ -34,8 +34,8 @@ body {
   cursor: var(--cursor);
   font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
   font-size: 20pt;
-  letter-spacing: -5px;
-  word-spacing: 5px;
+  letter-spacing: -3px;
+  word-spacing: 3px;
   line-height: 1.4;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
