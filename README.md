@@ -36,7 +36,21 @@ Colours are taken from [Wada Sanzo's Dictionary of Color Combinations](https://s
   **Deep Lyons Blue** `#0024cc`, **Jasper Red** `#fa2b00`
 
 The paper-grain background was removed; the page is a flat white. All type is
-set in Courier at 20 pt with 5 pt letter spacing.
+set at 20 pt with 5 pt letter spacing.
+
+## Typography
+
+The site uses **“Why do we blink so frequently? Jungle”** by junkohanhero
+(`assets/fonts/why-do-we-blink-jungle.ttf`, loaded via `@font-face` as
+`Bonita Display`). The font has no Chinese glyphs, so `纽约` falls back to
+PingFang / Hiragino Sans / Noto Sans CJK, and the `←` in the back link falls back
+to the system font. `纽约` is wrapped in `.no-break` so it never splits across
+lines on narrow screens.
+
+Licensing: the font is **free for personal use only**; commercial use (this is a
+company site) requires a $20 licence from junkohanhero
+(junkohanhero@gmail.com). Swap the file if a licensed alternative is preferred —
+only the `@font-face` `src` and the `font-family` list need to change.
 
 ## Files
 
@@ -47,6 +61,8 @@ set in Courier at 20 pt with 5 pt letter spacing.
   devices and when reduced motion is requested)
 - `video-fallback.js` — replaces the embed with a thumbnail link when the site
   is opened from `file://`, where YouTube cannot receive a referrer
+- `assets/fonts/why-do-we-blink-jungle.ttf` — the display typeface (see Typography)
+- `assets/fonts/LICENCE.txt` — the type designer's licence note
 - `assets/logo-ant.png` — black web version of `LOGO ANT BIG.png`, used as the
   oversized background logo at 40% opacity
 - `assets/logo-ant-small.png` — cropped 480 px black logo used as the top-left
