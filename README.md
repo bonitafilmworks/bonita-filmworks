@@ -17,7 +17,7 @@ The site is published from this repository and served at
 | --- | --- | --- |
 | Home / Index | `index.html` | List of the four pages (no top-right navigation) |
 | Who Are We? | `us.html` | Company statement and Contact button |
-| Contact | `contact.html` | Project/Info form that emails the studio via FormSubmit |
+| Contact | `contact.html` | Project/Email/Info form with mailing-list signup |
 | whiteTAR | `whitetar.html` | Embedded YouTube player |
 | Two Bridges, New York | `two-bridges.html` | Embedded YouTube player |
 | Bonnet & Calypso | `bonnet-calypso.html` | Coming soon |
@@ -56,8 +56,8 @@ screens.
 - `styles.css` — all styling (shared by every page)
 - `nav-highlight.js` — covers a hovered navigation label or button with a solid
   box in a random colour from the palette
-- `contact.js` — posts the Contact form's **Project** and **Info** fields to
-  FormSubmit and shows an inline confirmation
+- `contact.js` — posts the Contact form to FormSubmit and, when the mailing-list
+  box is ticked, subscribes the sender's email through Kit
 - `logo-position.js` — centres the top logo between the frame and the first
   navigation label on the index page
 - `video-fallback.js` — replaces the embed with a thumbnail link when the site
@@ -110,10 +110,37 @@ works on GitHub Pages.
   Replace the address in the `fetch` endpoint in `contact.js` and in the form
   `action` in `contact.html` to use it.
 - The **Project** field becomes the email subject (`Project: …`), the **Info**
-  field becomes the body, and `_honey` is a hidden spam trap. Captcha is off so
-  visitors only see the two fields.
+  field becomes the body, and the sender's **Email** becomes the Reply-To address.
+  `_honey` is a hidden spam trap. Captcha is off so visitors only see the three
+  fields.
 - Test submissions on the live site, not from `localhost`, so activation is tied
   to `bonitafilmworks.co`.
+
+### Mailing list
+
+The same form feeds a [Kit](https://kit.com/) mailing list (formerly ConvertKit;
+free up to 10,000 subscribers). The **Add me to the Bonita FilmWorks mailing
+list** box is ticked by default. When it is left ticked, `contact.js` posts the
+sender's address to Kit after FormSubmit accepts the message.
+
+To connect it:
+
+1. Create the free Kit account and set the sender name, email and mailing address.
+2. In **Grow → Landing pages & forms**, create an inline form. In its settings,
+   keep **double opt-in** on, add a tag such as `contact form`, and publish it.
+   Keep the email field as the only required field so the hidden form can submit
+   with just an address.
+3. Click **Embed → HTML** and copy the form action. It looks like
+   `https://app.kit.com/forms/1234567/subscriptions`.
+4. Replace `KIT_FORM_ID` in `contact.html` with the number from that address.
+   Until you do, the contact form still works and simply skips the subscription.
+5. Send one test message and click the confirmation link in the Kit email to
+   finish.
+
+With double opt-in, Kit emails each sender a confirmation link; they join the list
+after clicking it, which also proves the address is real. The hidden
+`subscribe-form` and its iframe in `contact.html` keep this off the page, so the
+visitor only sees the inline thank-you.
 
 ## Publish for free with GitHub Pages
 

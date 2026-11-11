@@ -278,6 +278,37 @@ button:focus-visible {
   outline-offset: 4px;
 }
 
+.contact__consent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 12px;
+  width: min(100%, 60ch);
+  margin: 0 auto clamp(20px, 2.8vh, 28px);
+  font-size: 20pt;
+  letter-spacing: -1px;
+  word-spacing: 1px;
+  line-height: 1.45;
+  text-align: left;
+}
+
+.contact__consent input {
+  flex: none;
+  width: 20px;
+  height: 20px;
+  margin: 0.35em 0 0;
+  accent-color: var(--fg);
+  cursor: var(--cursor);
+}
+
+.contact__subscribe-target {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  border: 0;
+}
+
 .contact__note {
   width: min(100%, 60ch);
   margin: clamp(18px, 3vh, 26px) auto 0;
@@ -319,6 +350,7 @@ button:focus-visible {
 /* After a successful send, the form gives way to the thank-you line. */
 
 .contact.is-sent .contact__field,
+.contact.is-sent .contact__consent,
 .contact.is-sent .contact__honey,
 .contact.is-sent .button {
   display: none;
