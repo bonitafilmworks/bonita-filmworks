@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact — bonita filmworks company</title>
+    <meta name="description" content="Contact Bonita FilmWorks Company about your project." />
+    <meta name="theme-color" content="#f7f2f0" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <link rel="icon" href="assets/cursor-ant.png" type="image/png" sizes="64x64" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="backdrop" aria-hidden="true">
+      <img
+        class="backdrop__logo"
+        src="assets/logo-ant.png"
+        alt=""
+        width="2200"
+        height="1676"
+        decoding="async"
+      />
+    </div>
+
+    <div class="site">
+      <header class="site-header">
+        <a class="brand" href="index.html">
+          <img
+            class="brand__logo"
+            src="assets/logo-ant-small.png"
+            alt="bonita filmworks company"
+            width="480"
+            height="758"
+            decoding="async"
+          />
+        </a>
+      </header>
+
+      <main class="project">
+        <h1 class="project__title">Contact</h1>
+
+        <form class="contact" id="contact-form">
+          <div class="contact__field">
+            <label for="project">Project</label>
+            <input id="project" name="project" type="text" autocomplete="off" required />
+          </div>
+
+          <div class="contact__field">
+            <label for="info">Info</label>
+            <textarea id="info" name="info" rows="7" required></textarea>
+          </div>
+
+          <button class="button" type="submit">Send</button>
+        </form>
+
+        <p class="contact__note">
+          If your mail app does not open, write to
+          <a href="mailto:bonitafilmworks@gmail.com">bonitafilmworks@gmail.com</a>.
+        </p>
+      </main>
+    </div>
+    <script src="contact.js" defer></script>
+    <script src="nav-highlight.js" defer></script>
+  </body>
+</html>

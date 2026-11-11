@@ -186,6 +186,92 @@ button:focus-visible {
   text-wrap: pretty;
 }
 
+.project__copy + .project__copy {
+  margin-top: 1.2em;
+}
+
+.project__actions {
+  margin: clamp(26px, 4vh, 40px) 0 0;
+}
+
+/* Button ---------------------------------------------------------- */
+
+.button {
+  display: inline-block;
+  padding: 11px 28px;
+  border: 1px solid var(--fg);
+  background: transparent;
+  color: var(--fg);
+  font-family: inherit;
+  font-size: 20pt;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1.2;
+  text-decoration: none;
+  cursor: var(--cursor);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.button:hover,
+.button:focus-visible {
+  background: var(--fg);
+  color: var(--bg);
+}
+
+/* Contact form ---------------------------------------------------- */
+
+.contact {
+  width: min(100%, 60ch);
+}
+
+.contact__field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: clamp(18px, 2.6vh, 26px);
+}
+
+.contact__field label {
+  font-weight: 500;
+}
+
+.contact__field input,
+.contact__field textarea {
+  width: 100%;
+  margin: 0;
+  padding: 10px 0;
+  border: 0;
+  border-bottom: 1px solid var(--line);
+  border-radius: 0;
+  background: transparent;
+  color: var(--fg);
+  font-family: inherit;
+  font-size: 20pt;
+  letter-spacing: 0;
+  word-spacing: 0;
+  line-height: 1.5;
+}
+
+.contact__field textarea {
+  min-height: 180px;
+  resize: vertical;
+}
+
+.contact__field input:focus,
+.contact__field textarea:focus {
+  border-bottom-color: var(--fg);
+  outline: 2px solid var(--fg);
+  outline-offset: 4px;
+}
+
+.contact__note {
+  width: min(100%, 60ch);
+  margin: clamp(18px, 3vh, 26px) 0 0;
+  color: var(--muted);
+  font-size: 20pt;
+  text-wrap: pretty;
+}
+
 .project--soon .project__title {
   max-width: none;
   font-size: 20pt;

@@ -16,7 +16,8 @@ The site is published from this repository and served at
 | Page | File | Content |
 | --- | --- | --- |
 | Home / Index | `index.html` | List of the four pages (no top-right navigation) |
-| Who Are We? | `us.html` | Company statement |
+| Who Are We? | `us.html` | Company statement and Contact button |
+| Contact | `contact.html` | Project/Info form that opens an email |
 | whiteTAR | `whitetar.html` | Embedded YouTube player |
 | Two Bridges, New York | `two-bridges.html` | Embedded YouTube player |
 | Bonnet & Calypso | `bonnet-calypso.html` | Coming soon |
@@ -52,6 +53,8 @@ screens.
 - `styles.css` — all styling (shared by every page)
 - `nav-highlight.js` — covers the hovered label with a solid box in a random
   colour from the palette
+- `contact.js` — turns the Contact form's **Project** and **Info** fields into
+  the subject and body of an email to `bonitafilmworks@gmail.com`
 - `logo-position.js` — centres the top logo between the frame and the first
   navigation label on the index page
 - `video-fallback.js` — replaces the embed with a thumbnail link when the site
@@ -95,8 +98,10 @@ show **“Error 153: Video player configuration error”**. The embeds also use
    - `whitetar.html`
    - `two-bridges.html`
    - `bonnet-calypso.html`
+   - `contact.html`
    - `styles.css`
    - `nav-highlight.js`
+   - `contact.js`
    - `logo-position.js`
    - `video-fallback.js`
    - `assets/` (the whole folder)
