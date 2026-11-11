@@ -121,7 +121,8 @@ works on GitHub Pages.
 The same form feeds a [Kit](https://kit.com/) mailing list (formerly ConvertKit;
 free up to 10,000 subscribers). The **Add me to the Bonita FilmWorks mailing
 list** box is ticked by default. When it is left ticked, `contact.js` posts the
-sender's address to Kit after FormSubmit accepts the message.
+sender's address to Kit as soon as the form is submitted, independently of the
+message service, so list signups still work if FormSubmit is unavailable.
 
 To connect it:
 

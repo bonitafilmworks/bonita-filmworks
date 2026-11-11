@@ -62,6 +62,10 @@
     if (label) label.textContent = "Sending…";
     setStatus("");
 
+    // Start the mailing-list signup first so it does not depend on the
+    // message service being available or activated.
+    const subscribed = wantsList && addToMailingList(email);
+
     try {
       const response = await fetch(ENDPOINT, {
         method: "POST",
@@ -74,8 +78,6 @@
         throw new Error(result.message || "Submission failed");
       }
 
-      const subscribed = wantsList && addToMailingList(email);
-
       form.classList.remove("is-sending");
       form.classList.add("is-sent");
       setStatus(
@@ -87,7 +89,12 @@
       form.classList.remove("is-sending");
       if (button) button.disabled = false;
       if (label) label.textContent = "Send";
-      setStatus("Something went wrong. Please try again.", true);
+      setStatus(
+        subscribed
+          ? "You're on the mailing list — check your inbox to confirm. Your message could not be sent, so please email bonitafilmworks@gmail.com directly."
+          : "Something went wrong. Please try again.",
+        true
+      );
     }
   });
 })();
