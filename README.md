@@ -38,9 +38,11 @@ Colours are taken from [Wada Sanzo's Dictionary of Color Combinations](https://s
 The paper-grain background was removed; the page is a flat warm off-white
 (`#f7f2f0`). All type is set at 20 pt with 4 px of inward kerning
 (`letter-spacing: -4px`) and `word-spacing: 4px` so word gaps stay open. The
-whiteTAR wordmark uses a lighter −2 px kern (`.kern-2`). All page text is
-centred, including the statement, form labels and buttons; text typed into the
-form fields stays left-aligned. The logo is the only way back to the index.
+whiteTAR wordmark uses a lighter −2 px kern (`.kern-2`). Page headings are
+underlined, and paragraph copy uses a lighter −3 px kerning. All
+page text is centred, including the statement, form labels and buttons; text
+typed into the form fields stays left-aligned. The logo is the only way back to
+the index.
 
 ## Typography
 
