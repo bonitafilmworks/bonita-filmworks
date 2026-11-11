@@ -1,7 +1,7 @@
 # bonita filmworks company — portfolio
 
 A dependency-free portfolio site made for **GitHub Pages** (free hosting).
-An index page plus four project pages, a plain white background, an oversized
+An index page plus four project pages, a warm off-white background, an oversized
 black logo at 40% opacity with an 8 px blur anchored right, a black cropped logo
 as the home link, a Jasper Red ant cursor, a solid randomised colour box in
 Vandyke Brown, Vandyke Red, Carmine Red and Eosine Pink that covers hovered
@@ -20,24 +20,24 @@ The site is published from this repository and served at
 | Two Bridges, New York | `two-bridges.html` | Embedded YouTube player |
 | Bonnet & Calypso | `bonnet-calypso.html` | Coming soon |
 
-Each project page has a **← Index** link in its footer, and the logo at the top
-centre links back to the index.
+Each project page is returned to the index with the logo at the top centre; the
+pages carry no footer navigation of their own.
 
 ## Palette
 
 Colours are taken from [Wada Sanzo's Dictionary of Color Combinations](https://sanzo-wada.dmbk.io/):
 
-- Background: **white** `#ffffff`
+- Background: **warm off-white** `#f7f2f0`
 - Logos and text: **black** `#000000`
 - Cursor: **Jasper Red** `#fa2b00`
 - Hover box: **Vandyke Brown** `#362304`, **Vandyke Red** `#740909`,
   **Carmine Red** `#a10b2b`, **Eosine Pink** `#ff5ec4`
 
-The paper-grain background was removed; the page is a flat white. All type is
-set at 20 pt with 4 px of inward kerning (`letter-spacing: -4px`) and
-`word-spacing: 4px` so word gaps stay open. The whiteTAR wordmark uses a lighter
-−2 px kern (`.kern-2`). The index navigation and the footer **← Index** link are
-centred.
+The paper-grain background was removed; the page is a flat warm off-white
+(`#f7f2f0`). All type is set at 20 pt with 4 px of inward kerning
+(`letter-spacing: -4px`) and `word-spacing: 4px` so word gaps stay open. The
+whiteTAR wordmark uses a lighter −2 px kern (`.kern-2`). The index navigation is
+centred. The logo is the only way back to the index.
 
 ## Typography
 

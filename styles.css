@@ -1,10 +1,10 @@
 /* ------------------------------------------------------------------
    bonita filmworks company — portfolio
-   White background, black logos and text, Helvetica display type
+   Warm off-white background, black logos and text, Helvetica display type
    ------------------------------------------------------------------ */
 
 :root {
-  --bg: #fff;             /* white */
+  --bg: #f7f2f0;          /* warm off-white */
   --fg: #000;
   --jasper: #fa2b00;      /* Jasper Red, cursor and fallback accents */
   --muted: rgba(0, 0, 0, 0.6);
