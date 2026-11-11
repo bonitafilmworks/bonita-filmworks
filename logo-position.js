@@ -1,6 +1,6 @@
 /* ------------------------------------------------------------------
    Centre the top logo vertically between the top of the frame and
-   the first navigation label ("Us"). Index page only.
+   the first navigation label ("Who?"). Index page only.
    ------------------------------------------------------------------ */
 
 (() => {
