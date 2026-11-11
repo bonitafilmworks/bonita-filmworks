@@ -2,7 +2,7 @@
 
 A dependency-free portfolio site made for **GitHub Pages** (free hosting).
 An index page plus four project pages, a warm off-white background, an oversized
-black logo at 40% opacity with an 8 px blur anchored right, a black cropped logo
+white logo at 40% opacity with an 8 px blur anchored right, a black cropped logo
 as the home link, a Jasper Red ant cursor, a solid randomised colour box in
 Vandyke Brown, Vandyke Red, Carmine Red and Eosine Pink that covers hovered
 navigation labels, centred navigation, and display type at 20 pt.
@@ -57,7 +57,7 @@ screens.
   is opened from `file://`, where YouTube cannot receive a referrer
 - `assets/logo-ant.png` — black web version of `LOGO ANT BIG.png`, used as the
   oversized background logo at 40% opacity with an 8 px blur
-  (`--backdrop-blur`)
+  (`--backdrop-blur`); CSS `brightness(0) invert(1)` renders it white
 - `assets/logo-ant-small.png` — cropped 480 px black logo used as the top-centre
   home link (displayed at 117–151 px wide)
 - `assets/cursor-ant.png` — Jasper Red 64 px version of `BFWC ANT.png`, used as the cursor
