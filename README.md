@@ -130,12 +130,12 @@ To connect it:
    keep **double opt-in** on, add a tag such as `contact form`, and publish it.
    Keep the email field as the only required field so the hidden form can submit
    with just an address.
-3. Click **Embed → HTML** and copy the form action. It looks like
-   `https://app.kit.com/forms/1234567/subscriptions`.
-4. Replace `KIT_FORM_ID` in `contact.html` with the number from that address.
-   Until you do, the contact form still works and simply skips the subscription.
-5. Send one test message and click the confirmation link in the Kit email to
-   finish.
+3. The hidden form is already wired to Kit form `10175681`
+   (`https://app.kit.com/forms/10175681/subscriptions`, uid `2e5520d864`). If you
+   replace the form later, copy **Embed → HTML** and update the `action`,
+   `data-sv-form` and `data-uid` on `#subscribe-form` in `contact.html`.
+4. Send one test contact message and click the confirmation link in the Kit email
+   to finish.
 
 With double opt-in, Kit emails each sender a confirmation link; they join the list
 after clicking it, which also proves the address is real. The hidden
