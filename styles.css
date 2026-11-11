@@ -179,6 +179,13 @@ button:focus-visible {
   text-wrap: balance;
 }
 
+.project__copy {
+  max-width: 60ch;
+  margin: 0;
+  line-height: 1.55;
+  text-wrap: pretty;
+}
+
 .project--soon .project__title {
   max-width: none;
   font-size: 20pt;

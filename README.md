@@ -16,7 +16,7 @@ The site is published from this repository and served at
 | Page | File | Content |
 | --- | --- | --- |
 | Home / Index | `index.html` | List of the four pages (no top-right navigation) |
-| Who? | `us.html` | Coming soon |
+| Who Are We? | `us.html` | Company statement |
 | whiteTAR | `whitetar.html` | Embedded YouTube player |
 | Two Bridges, New York | `two-bridges.html` | Embedded YouTube player |
 | Bonnet & Calypso | `bonnet-calypso.html` | Coming soon |
