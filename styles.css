@@ -382,11 +382,17 @@ button:focus-visible {
 /* Byline and synopsis on a film page ------------------------------ */
 
 .project__meta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.4em clamp(18px, 2.4vw, 44px);
   margin: calc(-1 * clamp(8px, 1.2vh, 14px)) 0 clamp(18px, 3vh, 28px);
   font-size: 14pt;
+  font-style: italic;
   letter-spacing: -1px;
   word-spacing: 1px;
   line-height: 1.4;
+  opacity: 0.9;
 }
 
 .project__synopsis {
