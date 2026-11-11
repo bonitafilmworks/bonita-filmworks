@@ -69,7 +69,7 @@ button:focus-visible {
   color: var(--fg);
 }
 
-/* Oversized white logo at 40%, pushed to the right ----------------- */
+/* Oversized black logo at 40%, pushed to the right ----------------- */
 
 .backdrop {
   position: fixed;
@@ -88,7 +88,7 @@ button:focus-visible {
   max-width: none;
   height: auto;
   opacity: 0.4;
-  filter: blur(var(--backdrop-blur)) brightness(0) invert(1);
+  filter: blur(var(--backdrop-blur));
   transform: translate(-50%, -50%);
   user-select: none;
   -webkit-user-drag: none;
