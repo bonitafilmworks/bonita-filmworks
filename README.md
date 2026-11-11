@@ -17,7 +17,7 @@ The site is published from this repository and served at
 | --- | --- | --- |
 | Home / Index | `index.html` | List of the four pages (no top-right navigation) |
 | Who Are We? | `us.html` | Company statement and Contact button |
-| Contact | `contact.html` | Project/Info form that opens an email |
+| Contact | `contact.html` | Project/Info form that emails the studio via FormSubmit |
 | whiteTAR | `whitetar.html` | Embedded YouTube player |
 | Two Bridges, New York | `two-bridges.html` | Embedded YouTube player |
 | Bonnet & Calypso | `bonnet-calypso.html` | Coming soon |
@@ -54,8 +54,8 @@ screens.
 - `styles.css` — all styling (shared by every page)
 - `nav-highlight.js` — covers a hovered navigation label or button with a solid
   box in a random colour from the palette
-- `contact.js` — turns the Contact form's **Project** and **Info** fields into
-  the subject and body of an email to `bonitafilmworks@gmail.com`
+- `contact.js` — posts the Contact form's **Project** and **Info** fields to
+  FormSubmit and shows an inline confirmation
 - `logo-position.js` — centres the top logo between the frame and the first
   navigation label on the index page
 - `video-fallback.js` — replaces the embed with a thumbnail link when the site
@@ -89,6 +89,29 @@ requires a real http(s) referrer for embedded players; a `file://` preview can
 show **“Error 153: Video player configuration error”**. The embeds also use
 `youtube-nocookie.com` and send
 `Referrer-Policy: strict-origin-when-cross-origin` to keep the player happy.
+
+## Contact form
+
+`contact.html` posts to [FormSubmit](https://formsubmit.co/), a free form service
+that forwards submissions to an inbox — no account and no backend required, so it
+works on GitHub Pages.
+
+- `contact.js` sends the form with `fetch` to
+  `https://formsubmit.co/ajax/bonitafilmworks@gmail.com`, keeps the visitor on the
+  page, and shows an inline confirmation or error.
+- **Activation is one-time:** the first submission triggers an email from
+  FormSubmit to `bonitafilmworks@gmail.com`. Click the confirmation link in that
+  email to start receiving messages. Any submission sent before activation is
+  not delivered.
+- After activation, FormSubmit offers a random alias link
+  (`https://formsubmit.co/abc123…`) that hides the plain address from bots.
+  Replace the address in the `fetch` endpoint in `contact.js` and in the form
+  `action` in `contact.html` to use it.
+- The **Project** field becomes the email subject (`Project: …`), the **Info**
+  field becomes the body, and `_honey` is a hidden spam trap. Captcha is off so
+  visitors only see the two fields.
+- Test submissions on the live site, not from `localhost`, so activation is tied
+  to `bonitafilmworks.co`.
 
 ## Publish for free with GitHub Pages
 

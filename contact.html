@@ -39,22 +39,43 @@
       <main class="project">
         <h1 class="project__title">Contact</h1>
 
-        <form class="contact" id="contact-form">
+        <form
+          class="contact"
+          id="contact-form"
+          action="https://formsubmit.co/bonitafilmworks@gmail.com"
+          method="POST"
+        >
+          <input type="hidden" name="_subject" value="Project enquiry" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input
+            class="contact__honey"
+            type="text"
+            name="_honey"
+            tabindex="-1"
+            autocomplete="off"
+            aria-hidden="true"
+          />
+
           <div class="contact__field">
             <label for="project">Project</label>
-            <input id="project" name="project" type="text" autocomplete="off" required />
+            <input id="project" name="Project" type="text" autocomplete="off" required />
           </div>
 
           <div class="contact__field">
             <label for="info">Info</label>
-            <textarea id="info" name="info" rows="7" required></textarea>
+            <textarea id="info" name="Info" rows="7" required></textarea>
           </div>
 
-          <button class="button" type="submit">Send</button>
+          <button class="button" type="submit">
+            <span class="button__label">Send</span>
+          </button>
+
+          <p class="contact__status" id="contact-status" role="status" aria-live="polite"></p>
         </form>
 
         <p class="contact__note">
-          If your mail app does not open, write to
+          Prefer email? Write to
           <a href="mailto:bonitafilmworks@gmail.com">bonitafilmworks@gmail.com</a>.
         </p>
       </main>

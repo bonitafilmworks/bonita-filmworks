@@ -221,6 +221,10 @@ button:focus-visible {
   color: var(--bg);
 }
 
+.button:disabled {
+  opacity: 0.55;
+}
+
 /* Contact form ---------------------------------------------------- */
 
 .contact {
@@ -275,6 +279,40 @@ button:focus-visible {
   color: var(--muted);
   font-size: 20pt;
   text-wrap: pretty;
+}
+
+/* Honeypot: hidden from people, tempting to bots. */
+
+.contact__honey {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.contact__status {
+  margin: clamp(16px, 2.6vh, 24px) 0 0;
+  font-size: 20pt;
+  text-wrap: pretty;
+}
+
+.contact__status:empty {
+  display: none;
+}
+
+.contact__status.is-error {
+  color: var(--jasper);
+}
+
+/* After a successful send, the form gives way to the thank-you line. */
+
+.contact.is-sent .contact__field,
+.contact.is-sent .contact__honey,
+.contact.is-sent .button {
+  display: none;
 }
 
 .project--soon .project__title {
