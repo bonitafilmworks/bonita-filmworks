@@ -62,8 +62,7 @@ screens.
 - `assets/logo-ant-small.png` — cropped 480 px black logo used as the top-centre
   home link (displayed at 117–151 px wide)
 - `assets/cursor-ant.png` — 64 px cursor ant: Jasper Red fill with a Hermosa
-  Pink outline
-- `assets/favicon.png` — black ant on a white tile
+  Pink outline; the same file is used as the favicon
 - `BFWC ANT.png`, `LOGO ANT BIG.png` — your original artwork, untouched
 - `CNAME` — tells GitHub Pages to serve the site at `bonitafilmworks.co`
 - `.nojekyll` — tells GitHub Pages to serve the files exactly as they are
