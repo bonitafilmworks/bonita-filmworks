@@ -104,7 +104,7 @@ works on GitHub Pages.
 - **Activation is one-time:** the first submission triggers an email from
   FormSubmit to `bonitafilmworks@gmail.com`. Click the confirmation link in that
   email to start receiving messages. Any submission sent before activation is
-  not delivered.
+  not delivered, though the mailing-list signup still goes through.
 - After activation, FormSubmit offers a random alias link
   (`https://formsubmit.co/abc123…`) that hides the plain address from bots.
   Replace the address in the `fetch` endpoint in `contact.js` and in the form
