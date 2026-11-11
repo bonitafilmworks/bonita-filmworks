@@ -11,7 +11,7 @@
   --line: rgba(0, 0, 0, 0.2);
   --backdrop-blur: 8px;   /* softening for the oversized logo */
   --pad: clamp(20px, 4vw, 56px);
-  /* BFWC ANT.png, recolored Jasper Red and scaled for use as a cursor */
+  /* BFWC ANT.png: Jasper Red fill, Hermosa Pink outline, cursor-sized */
   --cursor: url("assets/cursor-ant.png") 32 32, auto;
 }
 

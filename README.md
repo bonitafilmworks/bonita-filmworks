@@ -3,7 +3,8 @@
 A dependency-free portfolio site made for **GitHub Pages** (free hosting).
 An index page plus four project pages, a warm off-white background, an oversized
 black logo at 40% opacity with an 8 px blur anchored right, a black cropped logo
-as the home link, a Jasper Red ant cursor, a solid randomised colour box in
+as the home link, a Jasper Red ant cursor with a Hermosa Pink outline, a solid
+randomised colour box in
 Vandyke Brown, Vandyke Red, Carmine Red and Eosine Pink that covers hovered
 navigation labels, centred navigation, and display type at 20 pt.
 
@@ -29,7 +30,7 @@ Colours are taken from [Wada Sanzo's Dictionary of Color Combinations](https://s
 
 - Background: **warm off-white** `#f7f2f0`
 - Logos and text: **black** `#000000`
-- Cursor: **Jasper Red** `#fa2b00`
+- Cursor: **Jasper Red** `#fa2b00`, outlined in **Hermosa Pink** `#ffb3f0`
 - Hover box: **Vandyke Brown** `#362304`, **Vandyke Red** `#740909`,
   **Carmine Red** `#a10b2b`, **Eosine Pink** `#ff5ec4`
 
@@ -60,7 +61,8 @@ screens.
   (`--backdrop-blur`)
 - `assets/logo-ant-small.png` — cropped 480 px black logo used as the top-centre
   home link (displayed at 117–151 px wide)
-- `assets/cursor-ant.png` — Jasper Red 64 px version of `BFWC ANT.png`, used as the cursor
+- `assets/cursor-ant.png` — 64 px cursor ant: Jasper Red fill with a Hermosa
+  Pink outline
 - `assets/favicon.png` — black ant on a white tile
 - `BFWC ANT.png`, `LOGO ANT BIG.png` — your original artwork, untouched
 - `CNAME` — tells GitHub Pages to serve the site at `bonitafilmworks.co`
