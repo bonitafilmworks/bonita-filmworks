@@ -15,7 +15,7 @@
   const coarse = window.matchMedia("(hover: none), (pointer: coarse)");
   if (coarse.matches) return;
 
-  const links = document.querySelectorAll(".brand, .work a, .back");
+  const links = document.querySelectorAll(".brand, .work a, .back, .button");
   const PAD_X = 7;
   const PAD_Y = 4;
   let previous = -1;

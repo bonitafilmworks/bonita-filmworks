@@ -38,8 +38,9 @@ Colours are taken from [Wada Sanzo's Dictionary of Color Combinations](https://s
 The paper-grain background was removed; the page is a flat warm off-white
 (`#f7f2f0`). All type is set at 20 pt with 4 px of inward kerning
 (`letter-spacing: -4px`) and `word-spacing: 4px` so word gaps stay open. The
-whiteTAR wordmark uses a lighter −2 px kern (`.kern-2`). The index navigation is
-centred. The logo is the only way back to the index.
+whiteTAR wordmark uses a lighter −2 px kern (`.kern-2`). All page text is
+centred, including the statement, form labels and buttons; text typed into the
+form fields stays left-aligned. The logo is the only way back to the index.
 
 ## Typography
 
@@ -51,8 +52,8 @@ screens.
 ## Files
 
 - `styles.css` — all styling (shared by every page)
-- `nav-highlight.js` — covers the hovered label with a solid box in a random
-  colour from the palette
+- `nav-highlight.js` — covers a hovered navigation label or button with a solid
+  box in a random colour from the palette
 - `contact.js` — turns the Contact form's **Project** and **Info** fields into
   the subject and body of an email to `bonitafilmworks@gmail.com`
 - `logo-position.js` — centres the top logo between the frame and the first
